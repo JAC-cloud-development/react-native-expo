@@ -24,6 +24,11 @@ export const CoinDetailPage = ({navigation, route}) => {
       <Button onPress={onGoBack} text={'POP'}/>
       <Button onPress={onGoBackToTop} text={'POP TO TOP'}/>
       <Button onPress={onGoToCoinDetail} text={'PUSH Coin Detail'}/>
+      <Button onPress={onGoToCoinDetail}  >
+        <Text>sdasd</Text>
+        <Text>sddsd</Text>
+        <View style={{backgroundColor: 'blue', height: 50, width: 50}}/>
+      </Button>
     </View>
   )
 }

@@ -1,10 +1,12 @@
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-export const Button = ({text, onPress}) => {
+export const Button = ({text, onPress, children, style, imageSource}) => {
 
   return (
-    <TouchableOpacity style={styles.button} onPress={onPress}>
+    <TouchableOpacity style={[styles.button, style]} onPress={onPress}>
       <Text>{text}</Text>
+      {children}
+      {imageSource && <Image source={imageSource} />}
     </TouchableOpacity>
   )
 }
